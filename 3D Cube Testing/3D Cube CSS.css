@@ -1,0 +1,183 @@
+/*3D Cube Setting*/
+
+    /*Cube Holder*/
+
+#Cube-Holder {
+    height: 648.5px;
+    width: 1365.5px;
+    perspective: 600px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+#TD-Cube {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg);
+    transition: 1s;
+}
+
+.Cube {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 224.25px;
+    left: 582.75px;
+    opacity: 0.75;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: black;
+}
+
+    /**/
+
+    /*Cube Faces*/
+
+#Cube-Front {
+    background: red;
+    transform: rotateY(0deg) translateZ(100px);
+}
+
+#Cube-Left {
+    background: green;
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+#Cube-Back {
+    background: blue;
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+#Cube-Right {
+    background: orange;
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+#Cube-Top {
+    background: yellow;
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+#Cube-Bottom {
+    background: purple;
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+    /**/
+
+    /*Cube Texts Settings*/
+
+.All-Text {
+    font-size: 25px;
+    position: relative;
+    font-family: cursive;
+}
+
+#Cube-Front-Text {
+    position: relative;
+    top: 60px;
+    left: 65px;
+}
+#Cube-Left-Text {
+    position: relative;
+    top: 60px;
+    left: 65px;
+}
+#Cube-Back-Text {
+    position: relative;
+    top: 60px;
+    left: 65px;
+}
+#Cube-Right-Text {
+    position: relative;
+    top: 60px;
+    left: 60px;
+}
+#Cube-Top-Text {
+    position: relative;
+    top: 60px;
+    left: 70px;
+}
+#Cube-Bottom-Text {
+    position: relative;
+    top: 60px;
+    left: 55px;
+}
+
+    /**/
+
+/**/
+
+
+
+/*Cube Button Settings*/
+
+#Cube-Button-Holder {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+    /*Cube Button settings*/
+
+.Cube-Button-All-Text {
+    font-family: cursive;
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    background: rgb(150, 150, 150);
+}
+
+        /*Cube Button Hover and Active Settings*/
+
+.Cube-Button-All-Text:hover {
+    background: rgb(100, 100, 100);
+}
+
+.Cube-Button-All-Text:active {
+    background: rgb(50, 50, 50);
+}
+
+        /**/
+
+    /**/
+
+    /*Cube Buttons*/
+
+#Go-Right {
+    transform: rotateZ(90deg);
+    position: absolute;
+    top: 274.25px;
+    left: 832.75px;
+}
+
+#Go-Left {
+    transform: rotateZ(-90deg);
+    position: absolute;
+    top: 274.25px;
+    left: 432.75px;
+}
+
+#Go-Down {
+    transform: rotateZ(180deg);
+    position: absolute;
+    top: 474.25px;
+    left: 632.75px;
+}
+
+#Go-Up {
+    transform: rotateZ(0deg);
+    position: absolute;
+    top: 74.25px;
+    left: 632.75px;
+}
+
+    /**/
+
+/**/
